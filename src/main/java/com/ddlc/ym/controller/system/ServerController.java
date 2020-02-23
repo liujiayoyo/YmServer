@@ -28,6 +28,6 @@ public class ServerController {
 	public static void main(String[] args) {
 		System.err.println("yoyo78");
 		System.out.println("mumu");
-		System.out.println("mumutest");
+		System.out.println("mumutest add");
 	}
 }
