@@ -24,5 +24,8 @@ public class ServerController {
 		rtnMap.put("resource", "ymServer"+name);
 		return rtnMap;
 	}
-
+	
+	public static void main(String[] args) {
+		
+	}
 }
