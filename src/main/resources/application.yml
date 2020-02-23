@@ -1,0 +1,19 @@
+spring: 
+   application: 
+      name: ym-server
+      
+server:
+   port: 8001
+   
+eureka: 
+   instance: 
+      prefer-ip-address: true   #以IP地址注册到服务中心
+      hostname: 192.168.1.100
+      instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+   client: 
+      serviceUrl: 
+         defaultZone: http://ldw:openme@192.168.211.161:8761/eureka/,http://ldw:openme@192.168.211.169:8762/eureka/
+endpoints:
+   shutdown:
+      enabled: true   #启用 shutdown(eureka 优雅停服)
+      sensitive: false   #禁用密码验证
