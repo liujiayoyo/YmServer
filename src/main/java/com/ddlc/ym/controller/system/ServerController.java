@@ -26,7 +26,7 @@ public class ServerController {
 	}
 	
 	public static void main(String[] args) {
-		System.err.println("yoyo");
+		System.err.println("yoyo7");
 		System.out.println("mumu");
 	}
 }
